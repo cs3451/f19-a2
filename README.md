@@ -8,6 +8,39 @@ In this assignment, you will take the simple scene graph created in A1 and redo 
 
 **Name:  PLEASE PUT YOUR NAME HERE**
 
+## Rubric
+
+(Approximate;  TAs will adjust)
+
+- Fragment Shader  (15). 1 pt each for:
+  - include ambient light 
+  - normalized frag normal with normalMatrix
+  - directional light
+  - directional L vector
+  - diffuse color (dot * diffuse * k)
+  - handle diffuse dot > 0 
+  - specular color (dot ^ exp * k) as vec3 
+  - handle specular dot > 0 
+  - light contribution is ((diffuse + specular) * intensity * lightcolor) 
+  - attenuation light contribution
+  - completely handle 1 light correctly
+  - handle up to 8 lights correctly 
+  - texture value lookup
+  - texture combined with lighting 
+  - account for possible no texture 
+- clear background and depth (1)  
+- set up surface property uniforms for diffuse/spec/intensity (2)
+- set up texture (1)
+- handle no texture (1)
+- camera setup (1)
+- matrix setup (2)
+- normalMatrix setup (1)
+- ambient / attenuation setup (1)
+- light setup for 1 light (1)
+- light setup for up to 8 lights (2)
+- handle setup and notification for less than 8 lights (1)
+- directional light setup (1) 
+
 ## Overview 
 
 The assignment requires you to do two main things:
